@@ -3,3 +3,21 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.logo{
+	width: 20%;
+	margin-top: 30px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.title{
+	text-align: right;
+	margin-top: 20px;
+}
+
+.content{
+
+	/*这里傻了*/
+	/*margin:0 auto;*/
+}
