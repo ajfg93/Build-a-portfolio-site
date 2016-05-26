@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          font-family: 'Lato', sans-serif;
 }
 
 .logo{
@@ -13,11 +14,41 @@
 
 .title{
 	text-align: right;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .content{
+	margin:0 auto;
+}
 
-	/*这里傻了*/
-	/*margin:0 auto;*/
+.images{
+	width: 100%;
+}
+
+.fwork{
+	border-radius: 10px;
+}
+
+.author{
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.fwork-title{
+	font-weight: 300;
+	margin-top: 30px;
+	color:#7d97ad;
+}
+
+.hr{
+	border-top:3px solid #7d97ad;
+}
+
+.description{
+	text-align: center;
+}
+
+.social-media{
+	text-align: center;
+	font-size:20px;
 }
