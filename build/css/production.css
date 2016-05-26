@@ -5974,16 +5974,29 @@ button.close {
           font-family: 'Lato', sans-serif;
 }
 
+@media only screen and (max-width: 767px) {
+	.logo{
+		max-width: 30%;
+		margin:0 0 0 70%;
+	}
+}
+
+.author{
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.author-area{
+	text-align: right;
+}
+
 .logo{
-	width: 20%;
-	margin-top: 30px;
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
 
-.title{
-	text-align: right;
-	margin-top: 30px;
+header{
+	margin-top: 20px;
 }
 
 .content{
@@ -5998,11 +6011,6 @@ button.close {
 	border-radius: 10px;
 }
 
-.author{
-	font-weight: 100;
-	font-size: 50px;
-}
-
 .fwork-title{
 	font-weight: 300;
 	margin-top: 30px;
@@ -6013,11 +6021,13 @@ button.close {
 	border-top:3px solid #7d97ad;
 }
 
-.description{
-	text-align: center;
-}
-
 .social-media{
 	text-align: center;
 	font-size:20px;
 }
+
+.fwork-images{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
