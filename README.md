@@ -20,4 +20,20 @@
  
  
 # Thanks sincerely
+
+# solution from reviewer
+
+1. You are right the property margin: auto 0; won’t work for vertical centring. The auto property is used in conjunction with the margin property for horizontal centring. Since you are using bootstrap there are two ways to go about it. One is a sort of a hack : <http://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3>  mentioned in the linked post. I would not suggest using that. The other would be to use flexbox (also mentioned in the linked post ) . You have to apply the following style to the row class. 
+
+```
+ .row { 
+    display: flex; 
+    align-items: center;
+
+}
+```
+
+Make sure you apply this on medium to larger screens and use the default bootstrap styling on smaller screen using a media query else the design will look distorted. 
+
+2. Regarding your second question it is totally acceptable to use the class container-fluid which will save you a lot of trouble in the calculations and instead of calculating the percentages your single column  will be (as you pointed out) 1/12 of the viewport size i.e. 100vw. 
  
