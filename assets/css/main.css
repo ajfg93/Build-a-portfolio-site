@@ -5,16 +5,18 @@
           font-family: 'Lato', sans-serif;
 }
 
-@media only screen and (max-width: 767px) {
-	.logo{
-		max-width: 30%;
-		margin:0 0 0 70%;
+@media only screen and (min-width: 430px) {
+	.author{
+		font-size: 50px;
 	}
+}
+
+.container{
+	max-width: 800px;
 }
 
 .author{
 	font-weight: 100;
-	font-size: 50px;
 }
 
 .author-area{
@@ -24,6 +26,9 @@
 .logo{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+	width: 10em;
+	float:left;
+	margin-top: 2em;
 }
 
 header{

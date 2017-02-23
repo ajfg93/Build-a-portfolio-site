@@ -1,5 +1,4 @@
 module.exports = function(grunt){
-	//inital config
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -11,22 +10,26 @@ module.exports = function(grunt){
 		},
 
 		cssmin: {
-			  target: {
-			    files: [{
-			      expand: true,
-			      cwd: 'build/css',
-			      src: '*.css',
-			      dest: 'build/css',
-			      ext: '.min.css'
-			    }]
-			  }
-			},
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'build/css',
+					src: '*.css',
+					dest: 'build/css',
+					ext: '.min.css'
+				}]
+			}
+		},
 
 		responsive_images: {
 			dev: {
 				options:{
-					engine: 'im'
+					engine: 'im',
+					sizes: [{ name: '400w', width: 400, quality: 30},
+					{ name: '800w', width: 800, quality: 30},
+					{ name: '1200w', width: 1200, quality: 30}]
 				},
+
 
 				files: [{
 					expand:true,
@@ -45,18 +48,17 @@ module.exports = function(grunt){
 					spawn: false,
 				}
 			},
-
-
 		}
+
 	});
 
-	//loadModules
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-responsive-images');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-	//register
 
-	grunt.registerTask('default',['concat','cssmin']);
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-responsive-images');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+
+	grunt.registerTask('default',['concat','cssmin','responsive_images']);
 
 };
