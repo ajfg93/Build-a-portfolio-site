@@ -25,9 +25,9 @@ module.exports = function(grunt){
 			dev: {
 				options:{
 					engine: 'im',
-					sizes: [{ name: '400w', width: 400, quality: 30},
-					{ name: '800w', width: 800, quality: 30},
-					{ name: '1200w', width: 1200, quality: 30}]
+					sizes: [{ name: '400w', width: 400, quality: 70},
+					{ name: '800w', width: 800, quality: 70},
+					{ name: '1200w', width: 1200, quality: 70}]
 				},
 
 
