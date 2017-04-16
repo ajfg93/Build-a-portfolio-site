@@ -1,14 +1,14 @@
-#Build-a-portfolio-site
+# Build-a-portfolio-site
 A responsive web page of based on a provided mock-up.
 
-##Bulding tools
+## Bulding tools
 * HTML
 * CSS
 * BootStrap
 * Grunt
 
  
-#Install
+# Install
 
 public address http://23.83.229.224/
 
