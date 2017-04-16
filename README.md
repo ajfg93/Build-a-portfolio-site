@@ -10,7 +10,7 @@ A responsive web page of based on a provided mock-up.
  
 # Install
 
-public address http://23.83.229.224/
+public address 
 
 ```
 git clone https://github.com/ajfg93/Build-a-portfolio-site.git
